@@ -1,1 +1,14 @@
 /* You can add global styles to this file, and also import other style files */
+@import "primeicons/primeicons.css";
+@import "primeflex/primeflex.css";
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+mat-progress-bar .mat-progress-bar-buffer {
+    background: rgb(184, 184, 184);
+}
+
+mat-progress-bar .mat-progress-bar-fill::after {
+    background: #8fbd11;
+}

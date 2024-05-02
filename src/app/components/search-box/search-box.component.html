@@ -1,0 +1,5 @@
+<div class="m-3">
+  <p-autoComplete [(ngModel)]="selectedCountry" [suggestions]="filteredCountries" placeholder="Search City"
+    (completeMethod)="filterCountry($event)" (keydown)="checkLeagalKey($event)" (click)="selectCountry()">
+  </p-autoComplete>
+</div>

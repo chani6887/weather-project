@@ -1,0 +1,6 @@
+<app-search-box (onSelectedCountry)="getData($event)"></app-search-box>
+<div class="m-4">
+  <h4 *ngIf="selectedCountry">{{selectedCountry?.cityName}}</h4>
+</div>
+<app-forecast [dailyForecasts]="dailyForecasts" [weatherNow]="weatherNow"
+  [selectedCountry]="selectedCountry"></app-forecast>

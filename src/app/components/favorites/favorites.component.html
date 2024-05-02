@@ -1,0 +1,14 @@
+<div class="m-4"></div>
+<div class="surface-ground mx-4 px-4 py-5 md:px-6 lg:px-8">
+  <div class="grid">
+    <div class="col-12 md:col-6 lg:col-2" *ngFor="let fav of favorites">
+      <div class="surface-card shadow-2 p-3 border-round" (click)="selectCountry(fav)">
+        <div class="flex justify-content-center mb-3">
+          <div >
+            <span class="block text-500 font-medium mb-3  text-center">{{ fav.cityName }}</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
